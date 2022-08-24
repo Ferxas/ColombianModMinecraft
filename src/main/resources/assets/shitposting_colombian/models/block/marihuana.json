@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "shitposting_colombian:blocks/sasa",
+    "particle": "shitposting_colombian:blocks/sasa"
+  }
+}

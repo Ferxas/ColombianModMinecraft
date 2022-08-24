@@ -1,0 +1,33 @@
+{
+  "_fv": 5,
+  "_type": "potion",
+  "definition": {
+    "name": "Bareto",
+    "effectName": "Bareto",
+    "icon": "porro.png",
+    "color": {
+      "value": -1,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "isBad": true,
+    "isBenefitical": false,
+    "registerPotionType": false,
+    "curativeItems": [
+      {
+        "value": "Items.MILK_BUCKET"
+      },
+      {
+        "value": "CUSTOM:ComidaDeLaCosta"
+      }
+    ],
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "onStarted": {
+      "name": "BaretoPotionStartedapplied"
+    },
+    "onActiveTick": {
+      "name": "BaretoPotionStartedapplied"
+    }
+  }
+}

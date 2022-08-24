@@ -1,0 +1,2115 @@
+---- Minecraft Crash Report ----
+// You should try our sister game, Minceraft!
+
+Time: 1/03/20 05:06 PM
+Description: Exception ticking world
+
+java.lang.StackOverflowError: Exception ticking world
+	at net.minecraft.world.storage.loot.LootContext.get(LootContext.java:52) ~[?:?] {re:classloading}
+	at net.minecraft.world.storage.loot.conditions.MatchTool.test(MatchTool.java:27) ~[?:?] {re:classloading}
+	at net.minecraft.world.storage.loot.conditions.MatchTool.test(MatchTool.java:15) ~[?:?] {re:classloading}
+	at net.minecraft.world.storage.loot.LootEntry.func_216141_a(LootEntry.java:33) ~[?:?] {re:classloading}
+	at net.minecraft.world.storage.loot.StandaloneLootEntry.expand(StandaloneLootEntry.java:55) ~[?:?] {re:classloading}
+	at net.minecraft.world.storage.loot.ILootEntry.lambda$alternate$3(ILootEntry.java:27) ~[?:?] {re:classloading}
+	at net.minecraft.world.storage.loot.ParentedLootEntry.expand(ParentedLootEntry.java:38) ~[?:?] {re:classloading}
+	at net.minecraft.world.storage.loot.LootPool.generateRoll(LootPool.java:57) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.storage.loot.LootPool.generate(LootPool.java:93) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.storage.loot.LootTable.recursiveGenerate(LootTable.java:70) ~[?:?] {re:classloading}
+	at net.minecraft.world.storage.loot.LootTable.generate(LootTable.java:81) ~[?:?] {re:classloading}
+	at net.minecraft.world.storage.loot.LootTable.generate(LootTable.java:86) ~[?:?] {re:classloading}
+	at net.minecraft.block.Block.getDrops(Block.java:598) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.getDrops(BlockState.java:292) ~[?:?] {re:classloading}
+	at net.minecraft.block.Block.getDrops(Block.java:604) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.spawnDrops(Block.java:633) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:290) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.destroyBlock(World.java:293) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.replaceBlock(Block.java:234) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.World.setBlockState(World.java:227) ~[?:?] {re:classloading,pl:accesstransformer:B}
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Server thread
+Stacktrace:
+	at net.minecraft.world.storage.loot.LootContext.get(LootContext.java:52)
+	at net.minecraft.world.storage.loot.conditions.MatchTool.test(MatchTool.java:27)
+	at net.minecraft.world.storage.loot.conditions.MatchTool.test(MatchTool.java:15)
+	at net.minecraft.world.storage.loot.LootEntry.func_216141_a(LootEntry.java:33)
+	at net.minecraft.world.storage.loot.StandaloneLootEntry.expand(StandaloneLootEntry.java:55)
+	at net.minecraft.world.storage.loot.ILootEntry.lambda$alternate$3(ILootEntry.java:27)
+	at net.minecraft.world.storage.loot.ParentedLootEntry.expand(ParentedLootEntry.java:38)
+	at net.minecraft.world.storage.loot.LootPool.generateRoll(LootPool.java:57)
+	at net.minecraft.world.storage.loot.LootPool.generate(LootPool.java:93)
+	at net.minecraft.world.storage.loot.LootTable.recursiveGenerate(LootTable.java:70)
+	at net.minecraft.world.storage.loot.LootTable.generate(LootTable.java:81)
+	at net.minecraft.world.storage.loot.LootTable.generate(LootTable.java:86)
+	at net.minecraft.block.Block.getDrops(Block.java:598)
+	at net.minecraft.block.BlockState.getDrops(BlockState.java:292)
+	at net.minecraft.block.Block.getDrops(Block.java:604)
+	at net.minecraft.block.Block.spawnDrops(Block.java:633)
+	at net.minecraft.world.World.destroyBlock(World.java:290)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+	at net.minecraft.block.Block.replaceBlock(Block.java:234)
+	at net.minecraft.block.Block.updateNeighbors(Block.java:200)
+	at net.minecraft.block.BlockState.updateNeighbors(BlockState.java:255)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:260)
+	at net.minecraft.world.World.setBlockState(World.java:227)
+	at net.minecraft.world.World.destroyBlock(World.java:293)
+
+-- Affected level --
+Details:
+	All players: 1 total; [ServerPlayerEntity['Dev'/305, l='probando xd', x=-243.00, y=101.00, z=-34.00]]
+	Chunk stats: ServerChunkCache: 1774
+	Level dimension: DimensionType{shitposting_colombian:laselvadelasfarc}
+	Derived: true
+	Level name: probando xd
+	Level seed: -5718820139602098647
+	Level generator: ID 00 - default, ver 1. Features enabled: true
+	Level generator options: {}
+	Level spawn location: World: (-144,71,-111), Chunk: (at 0,4,1 in -9,-7; contains blocks -144,0,-112 to -129,255,-97), Region: (-1,-1; contains chunks -32,-32 to -1,-1, blocks -512,0,-512 to -1,255,-1)
+	Level time: 1371 game time, 1371 day time
+	Level storage version: 0x04ABD - Anvil
+	Level weather: Rain time: 83356 (now: false), thunder time: 42385 (now: false)
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Cheats: true
+Stacktrace:
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:868)
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:800)
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:118)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:646)
+	at java.lang.Thread.run(Thread.java:748)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.14.4
+	Minecraft Version ID: 1.14.4
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_232, BellSoft
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode), 
+	Memory: 291549280 bytes (278 MB) / 884998144 bytes (844 MB) up to 1894252544 bytes (1806 MB)
+	CPUs: 8
+	JVM Flags: 1 total; -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump
+	ModLauncher: 4.1.0+62+5bfa59b
+	ModLauncher launch target: fmluserdevclient
+	ModLauncher naming: mcp
+	ModLauncher services: 
+		/eventbus-1.0.0-service.jar eventbus PLUGINSERVICE 
+		/forge-1.14.4-28.1.117_mapped_snapshot_20190719-1.14.3-launcher.jar object_holder_definalize PLUGINSERVICE 
+		/forge-1.14.4-28.1.117_mapped_snapshot_20190719-1.14.3-launcher.jar runtime_enum_extender PLUGINSERVICE 
+		/accesstransformers-1.0.1-milestone.0.1+94458e7-shadowed.jar accesstransformer PLUGINSERVICE 
+		/forge-1.14.4-28.1.117_mapped_snapshot_20190719-1.14.3-launcher.jar capability_inject_definalize PLUGINSERVICE 
+		/forge-1.14.4-28.1.117_mapped_snapshot_20190719-1.14.3-launcher.jar runtimedistcleaner PLUGINSERVICE 
+		/forge-1.14.4-28.1.117_mapped_snapshot_20190719-1.14.3-launcher.jar fml TRANSFORMATIONSERVICE 
+	FML: 28.1
+	Forge: net.minecraftforge:28.1.117
+	FML Language Providers: 
+		javafml@28.1
+		minecraft@1
+	Mod List: 
+		client-extra.jar Minecraft {minecraft@1.14.4 DONE}
+		forge-1.14.4-28.1.117_mapped_snapshot_20190719-1.14.3-recomp.jar Forge {forge@28.1.117 DONE}
+		main Shitposting colombian {shitposting_colombian@1.0.0 DONE}
+	Player Count: 1 / 8; [ServerPlayerEntity['Dev'/305, l='probando xd', x=-243.00, y=101.00, z=-34.00]]
+	Data Packs: vanilla, mod:forge, mod:shitposting_colombian
+	Type: Integrated Server (map_client.txt)
+	Is Modded: Definitely; Client brand changed to 'forge'

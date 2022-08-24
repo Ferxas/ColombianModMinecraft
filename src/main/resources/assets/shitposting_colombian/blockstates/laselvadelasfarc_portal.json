@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "axis=z": {
+      "model": "shitposting_colombian:block/laselvadelasfarc_portal_ew"
+    },
+    "axis=x": {
+      "model": "shitposting_colombian:block/laselvadelasfarc_portal_ns"
+    }
+  }
+}

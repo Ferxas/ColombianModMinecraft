@@ -1,0 +1,47 @@
+{
+  "xd": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "shitposting_colombian:phelex_estudios_-_ranchera_-_instrumental_guitarras_trompetas_acordeones_-_karaoke",
+        "stream": false
+      }
+    ]
+  },
+  "a_s": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "shitposting_colombian:sonido_de_pistola",
+        "stream": false
+      }
+    ]
+  },
+  "sinpalabras": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "shitposting_colombian:sin_palabras",
+        "stream": false
+      }
+    ]
+  },
+  "elmachetazo": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "shitposting_colombian:chico_gel_el_machetazo",
+        "stream": false
+      }
+    ]
+  },
+  "jajasinpalabras": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "shitposting_colombian:sin_palabras_1",
+        "stream": false
+      }
+    ]
+  }
+}

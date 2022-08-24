@@ -1,0 +1,39 @@
+{
+  "_fv": 5,
+  "_type": "plant",
+  "definition": {
+    "renderType": 12,
+    "texture": "sasa",
+    "customModelName": "Cross model",
+    "plantType": "normal",
+    "growapableSpawnType": "Plains",
+    "growapableMaxHeight": 3,
+    "name": "Marihuana",
+    "creativeTab": {
+      "value": "DECORATIONS"
+    },
+    "hardness": 1.0,
+    "resistance": 0.0,
+    "luminance": 0.0,
+    "unbreakable": false,
+    "soundOnStep": {
+      "value": "GROUND"
+    },
+    "customDrop": {
+      "value": ""
+    },
+    "dropAmount": 1,
+    "isReplaceable": false,
+    "isFlammable": true,
+    "colorOnMap": "DEFAULT",
+    "creativePickItem": {
+      "value": ""
+    },
+    "frequencyOnChunks": 10,
+    "spawnWorldTypes": [
+      "Surface",
+      "CUSTOM:LaSelvaDeLasFarc"
+    ],
+    "restrictionBiomes": []
+  }
+}

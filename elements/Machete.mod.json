@@ -1,0 +1,27 @@
+{
+  "_fv": 5,
+  "_type": "item",
+  "definition": {
+    "renderType": 0,
+    "texture": "machetazo",
+    "customModelName": "Normal",
+    "name": "Rula",
+    "creativeTab": {
+      "value": "TOOLS"
+    },
+    "stackSize": 1,
+    "enchantability": 50,
+    "useDuration": 500,
+    "toolType": 2.0,
+    "damageCount": 100,
+    "destroyAnyBlock": false,
+    "stayInGridWhenCrafting": true,
+    "enableMeleeDamage": true,
+    "damageVsEntity": 200.0,
+    "specialInfo": [
+      "Éste es un poderoso machete que al atacar un enemigo lo mocha por la mitad y lo manda para SaludTotal",
+      "también puedes usarlo para talarte la finca entera"
+    ],
+    "hasGlow": false
+  }
+}

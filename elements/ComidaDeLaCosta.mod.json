@@ -1,0 +1,21 @@
+{
+  "_fv": 5,
+  "_type": "food",
+  "definition": {
+    "renderType": 0,
+    "texture": "soo_o_oo",
+    "customModelName": "Normal",
+    "name": "Comida De La Costa",
+    "creativeTab": {
+      "value": "FOOD"
+    },
+    "stackSize": 64,
+    "nutritionalValue": 10,
+    "saturation": 0.30000000000000004,
+    "eatingSpeed": 10,
+    "forDogs": false,
+    "isAlwaysEdible": false,
+    "animation": "eat",
+    "hasGlow": false
+  }
+}

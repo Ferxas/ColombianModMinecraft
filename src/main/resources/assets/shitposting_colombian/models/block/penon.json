@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "shitposting_colombian:blocks/penon_block",
+    "up": "shitposting_colombian:blocks/penon_block",
+    "north": "shitposting_colombian:blocks/penon_block",
+    "east": "shitposting_colombian:blocks/penon_block",
+    "south": "shitposting_colombian:blocks/penon_block",
+    "west": "shitposting_colombian:blocks/penon_block",
+    "particle": "shitposting_colombian:blocks/penon_block"
+  }
+}

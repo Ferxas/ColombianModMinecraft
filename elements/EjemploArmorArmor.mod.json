@@ -1,0 +1,54 @@
+{
+  "_fv": 5,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "casco_jejejej",
+    "enableBody": true,
+    "textureBody": "fasfasd",
+    "enableLeggings": true,
+    "textureLeggings": "lol",
+    "enableBoots": true,
+    "textureBoots": "ejemploarmor_boots",
+    "creativeTab": {
+      "value": "COMBAT"
+    },
+    "armorTextureFile": "ejemploarmor",
+    "helmetName": "Marimonda Helmet",
+    "bodyName": "JamesArmor Chestplate",
+    "leggingsName": "JamesArmor Leggings",
+    "bootsName": "BarranquillaArmor Boots",
+    "helmetModelName": "Default",
+    "helmetModelPart": "Helmet",
+    "helmetModelTexture": "From armor",
+    "bodyModelName": "Default",
+    "bodyModelPart": "Body",
+    "bodyModelTexture": "From armor",
+    "leggingsModelName": "Default",
+    "leggingsModelPartL": "Leggings L",
+    "leggingsModelPartR": "Leggings R",
+    "leggingsModelTexture": "From armor",
+    "bootsModelName": "Default",
+    "bootsModelPartL": "Boots L",
+    "bootsModelPartR": "Boots R",
+    "bootsModelTexture": "From armor",
+    "maxDamage": 200,
+    "damageValueHelmet": 50,
+    "damageValueBody": 50,
+    "damageValueLeggings": 50,
+    "damageValueBoots": 50,
+    "enchantability": 50,
+    "toughness": 5.0,
+    "equipSound": {
+      "value": ""
+    },
+    "repairItems": [
+      {
+        "value": "Blocks.SAPLING#2"
+      },
+      {
+        "value": "Blocks.SAPLING#1"
+      }
+    ]
+  }
+}

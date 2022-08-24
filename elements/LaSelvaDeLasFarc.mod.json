@@ -1,0 +1,78 @@
+{
+  "_fv": 5,
+  "_type": "dimension",
+  "definition": {
+    "portalFrame": {
+      "value": "CUSTOM:Penon"
+    },
+    "portalParticles": {
+      "value": "PORTAL"
+    },
+    "portalLuminance": 0.0,
+    "portalSound": {
+      "value": "CUSTOM:a_s"
+    },
+    "igniterName": "Portal a la selva de las Farc",
+    "igniterTab": {
+      "value": "TOOLS"
+    },
+    "texture": "czvvzz",
+    "portalTexture": "penon_block",
+    "enablePortal": true,
+    "biomesInDimension": [
+      {
+        "value": "swamp"
+      },
+      {
+        "value": "plains"
+      },
+      {
+        "value": "jungle"
+      },
+      {
+        "value": "extreme_hills_with_trees"
+      },
+      {
+        "value": "jungle_hills"
+      }
+    ],
+    "worldGenType": "Normal world gen",
+    "mainFillerBlock": {
+      "value": "Blocks.TALLGRASS#1"
+    },
+    "secondaryFillerBlock": {
+      "value": "Blocks.SAPLING#2"
+    },
+    "tertiaryFillerBlock": {
+      "value": "Blocks.LEAVES2"
+    },
+    "fluidBlock": {
+      "value": "Blocks.WATER"
+    },
+    "airColor": {
+      "value": -4138753,
+      "frgbvalue": [
+        0.753,
+        0.847,
+        1.0
+      ],
+      "fvalue": [
+        0.753,
+        0.847,
+        1.0
+      ],
+      "falpha": 1.0
+    },
+    "canRespawnHere": false,
+    "hasFog": true,
+    "hasWeather": true,
+    "isDark": false,
+    "doesWaterVaporize": false,
+    "sleepResult": "ALLOW",
+    "hasSkyLight": true,
+    "imitateOverworldBehaviour": false,
+    "dimensionMusic": {
+      "value": "CUSTOM:xd"
+    }
+  }
+}
