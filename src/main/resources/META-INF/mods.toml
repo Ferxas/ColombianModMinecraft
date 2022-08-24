@@ -5,9 +5,9 @@ loaderVersion="[28,)"
 modId="shitposting_colombian"
 version="1.0.0"
 displayName="Shitposting colombian"
-credits="Created using mod maker MCreator - https://mcreator.net/about"
-displayURL="https://mcreator.net"
-authors="Ferxas, MCreator"
+credits="Ferxas"
+displayURL="https://allmylinks.com/ferxas"
+authors="Ferxas"
 
 [[dependencies.shitposting_colombian]]
     modId="minecraft"
