@@ -5,4 +5,4 @@ This is an old minecraft mod that i made in february 2020, i can't remember for 
 
 <h2>Git</h2>
 
-$ git clone https://github.com/Ferxas/ColombianModMinecraft.git
+`$ git clone https://github.com/Ferxas/ColombianModMinecraft.git`
